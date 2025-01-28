@@ -13,8 +13,10 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.4.1",
     "@mui/material": "^6.4.1",
+    "@sandstreamdev/react-swipeable-list": "^1.0.2",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-swipeable": "^7.0.2"
   }
 }

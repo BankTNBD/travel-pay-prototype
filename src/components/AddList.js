@@ -5,7 +5,7 @@ import { Button, Dialog, DialogActions, DialogContent, DialogContentText, Dialog
 import uidGen from '@/functions/uidGen';
 import { readLocalStorage, writeLocalStorage, updateLocalStorage } from '@/functions/localStorageFunc';
 
-export default function AddList({ open, setOpen }) {
+export default function AddList({ open, setOpen, updateFunc }) {
     const [amountHandler, setAmountHandler] = React.useState('');
     const handleClose = () => {
         setOpen(false);
@@ -32,6 +32,7 @@ export default function AddList({ open, setOpen }) {
                             writeLocalStorage(uid, []);
                             handleClose();
                             setAmountHandler('');
+                            updateFunc();
                         }
                     },
                 }}

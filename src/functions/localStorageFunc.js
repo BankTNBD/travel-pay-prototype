@@ -30,6 +30,11 @@ export function updateLocalStorage(key, fn, value) {
                 writeLocalStorage(key, data.filter(item => item !== value));
             }
             break;    
+        case 'removeById':
+            if (data) {
+                writeLocalStorage(key, data.filter(item => item.id !== value));
+            }
+            break;
     }
 
 }
